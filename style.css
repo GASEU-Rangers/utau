@@ -1,105 +1,110 @@
 body{
+
 margin:0;
 font-family:sans-serif;
-background:#f5f5f5;
-}
 
-header{
-
-position:fixed;
-width:100%;
-background:#111;
-padding:15px;
+background:#d85a74;
+color:white;
 
 }
+
+
+
+/* 로고 */
+
+.logo-area{
+
+text-align:center;
+padding-top:80px;
+
+}
+
+.logo-area img{
+
+width:300px;
+
+}
+
+
+
+/* 메뉴 */
 
 .menu{
 
 display:flex;
 justify-content:center;
-gap:30px;
+
+gap:100px;
+
+margin-top:60px;
 
 }
 
-.menu a{
 
-color:white;
-text-decoration:none;
 
-}
-
-section{
-
-padding:120px 50px;
-min-height:100vh;
-
-}
-
-.hero{
+.column{
 
 display:flex;
-align-items:center;
-justify-content:space-between;
+flex-direction:column;
+
+gap:25px;
 
 }
 
-.flex{
 
-display:flex;
-align-items:center;
-justify-content:space-between;
-margin-top:40px;
 
-}
+.column h2{
 
-.left{
+margin:0;
+font-size:20px;
 
-width:45%;
+cursor:pointer;
 
 }
 
-.right{
 
-width:45%;
-text-align:center;
 
-}
+.column p{
 
-.character{
-
-width:350px;
+margin:0;
+font-size:13px;
+opacity:0.8;
 
 }
 
-.logo{
 
-width:250px;
 
-}
-
-.download{
-
-display:inline-block;
-margin-top:20px;
-padding:15px 30px;
-background:#ff4d6d;
-color:white;
-text-decoration:none;
-border-radius:8px;
-
-}
-
-img{
-
-max-width:100%;
-
-}
+/* footer */
 
 footer{
 
-background:#111;
-color:white;
 text-align:center;
-padding:20px;
+margin-top:120px;
+padding-bottom:50px;
+
+}
+
+
+
+/* TOP 버튼 */
+
+#topBtn{
+
+position:fixed;
+
+bottom:30px;
+right:30px;
+
+padding:12px 18px;
+
+background:white;
+color:#d85a74;
+
+border:none;
+border-radius:20px;
+
+cursor:pointer;
+
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
 
 }
