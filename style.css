@@ -3,7 +3,7 @@ margin:0;
 font-family:sans-serif;
 }
 
-/* 상단 바 */
+/* 상단 */
 
 .topbar{
 display:flex;
@@ -13,29 +13,28 @@ color:white;
 padding:15px;
 }
 
-.logo-small{
+.logo{
 font-weight:bold;
-font-size:18px;
 }
 
-/* 메뉴 */
+/* PC 메뉴 */
 
-.menu{
+.desktop-menu{
 margin-left:auto;
 display:flex;
 gap:20px;
 }
 
-.menu a{
+.desktop-menu a{
 color:white;
 text-decoration:none;
 }
 
-/* 햄버거 버튼 */
+/* 햄버거 */
 
-.menu-btn{
+.hamburger{
 display:none;
-margin-left:10px;
+margin-left:auto;
 font-size:22px;
 background:none;
 border:none;
@@ -43,52 +42,36 @@ color:white;
 cursor:pointer;
 }
 
-/* 구분선 */
+/* 모바일 메뉴 */
 
-.divider{
-width:1px;
-height:20px;
-background:#777;
-}
-
-/* 사이드 메뉴 */
-
-.side-menu{
+.mobile-menu{
+display:none;
 position:fixed;
 top:0;
-left:-260px;
-width:260px;
+left:0;
+width:250px;
 height:100%;
 background:white;
 padding:20px;
-display:flex;
-flex-direction:column;
-gap:15px;
 box-shadow:2px 0 10px rgba(0,0,0,0.2);
-transition:0.3s;
 }
 
-.side-menu a{
+.mobile-menu a{
+display:block;
+margin:10px 0;
 text-decoration:none;
 color:black;
 }
 
-/* 메인 */
-
-main{
-padding:120px 20px;
-text-align:center;
-}
-
 /* 반응형 */
 
-@media (max-width:800px){
+@media (max-width:900px){
 
-.menu{
+.desktop-menu{
 display:none;
 }
 
-.menu-btn{
+.hamburger{
 display:block;
 }
 
