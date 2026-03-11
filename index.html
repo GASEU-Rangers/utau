@@ -12,43 +12,35 @@
 
 <header class="topbar">
 
-<div class="logo-small">이름미정</div>
+<div class="logo">이름미정</div>
 
-<button class="menu-btn" onclick="toggleMenu()">☰</button>
+<button class="hamburger" onclick="toggleMenu()">☰</button>
 
-<nav class="menu">
-
+<nav class="desktop-menu">
 <a href="about.html">이름미정이란?</a>
 <a href="guideline.html">가이드라인</a>
-
-<div class="divider"></div>
-
 <a href="#">이메일</a>
 <a href="#">공식 트위터</a>
-
-<div class="divider"></div>
-
 <a href="utau.html">우타우 음원</a>
 <a href="illustration.html">일러스트 로고</a>
-
 </nav>
 
 </header>
 
 
-<div id="sideMenu" class="side-menu">
+<div id="mobileMenu" class="mobile-menu">
 
 <h2>이름미정</h2>
 
 <a href="about.html">이름미정이란?</a>
 <a href="guideline.html">가이드라인</a>
 
-<div class="divider"></div>
+<hr>
 
 <a href="#">이메일</a>
 <a href="#">공식 트위터</a>
 
-<div class="divider"></div>
+<hr>
 
 <a href="utau.html">우타우 음원</a>
 <a href="illustration.html">일러스트 로고</a>
@@ -59,7 +51,7 @@
 <main>
 
 <h1>메인 페이지</h1>
-<p>여기에 메인 소개가 들어갑니다</p>
+<p>여기에 메인 내용</p>
 
 </main>
 
@@ -68,12 +60,12 @@
 
 function toggleMenu(){
 
-let menu=document.getElementById("sideMenu");
+let menu = document.getElementById("mobileMenu");
 
-if(menu.style.left==="0px"){
-menu.style.left="-260px";
+if(menu.style.display === "block"){
+menu.style.display = "none";
 }else{
-menu.style.left="0px";
+menu.style.display = "block";
 }
 
 }
