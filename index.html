@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 
 <meta charset="UTF-8">
@@ -11,6 +12,7 @@
 
 </head>
 
+
 <body>
 
 
@@ -19,7 +21,7 @@
 <header class="topbar">
 
 <div class="logo-small">
-LOGO
+이름미정
 </div>
 
 <button class="menu-btn" onclick="toggleMenu()">
@@ -47,7 +49,7 @@ LOGO
 
 
 
-<!-- 팝업 메뉴 -->
+<!-- 사이드 메뉴 -->
 
 <div id="sideMenu" class="side-menu">
 
@@ -70,15 +72,24 @@ LOGO
 
 
 
-<!-- 내용 -->
+<!-- 메인 -->
 
 <main>
 
-<h1>메인 화면</h1>
+<section class="hero">
 
-<p>여기에 페이지 내용이 들어감</p>
+<h1>UTAU 음원 사이트</h1>
+<p>여기에 메인 소개가 들어갑니다</p>
+
+</section>
 
 </main>
+
+
+
+<!-- TOP 버튼 -->
+
+<button id="topBtn">TOP</button>
 
 
 
@@ -89,18 +100,26 @@ function toggleMenu(){
 let menu = document.getElementById("sideMenu");
 
 if(menu.style.left === "0px"){
-
-menu.style.left = "-250px";
-
+menu.style.left = "-260px";
 }else{
-
 menu.style.left = "0px";
+}
 
 }
+
+const topBtn = document.getElementById("topBtn");
+
+topBtn.onclick = function(){
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
 
 }
 
 </script>
+
 
 
 </body>
