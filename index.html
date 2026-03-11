@@ -1,128 +1,106 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>UTAU 음원 사이트</title>
+<title>이름미정</title>
 
 <link rel="stylesheet" href="style.css">
 
 </head>
 
-
 <body>
 
 
-<!-- 로고 -->
+<!-- 상단 바 -->
 
-<header class="logo-area">
+<header class="topbar">
 
-<img src="images/logo.png" alt="character logo">
+<div class="logo-small">
+LOGO
+</div>
+
+<button class="menu-btn" onclick="toggleMenu()">
+☰
+</button>
+
+<nav class="menu">
+
+<a href="#">이름미정이란?</a>
+<a href="#">가이드라인</a>
+
+<div class="divider"></div>
+
+<a href="#">이메일</a>
+<a href="#">공식 트위터</a>
+
+<div class="divider"></div>
+
+<a href="#">우타우 음원</a>
+<a href="#">일러스트 로고</a>
+
+</nav>
 
 </header>
 
 
 
-<!-- 메뉴 인덱스 -->
+<!-- 팝업 메뉴 -->
 
-<section class="menu">
+<div id="sideMenu" class="side-menu">
 
-<div class="column">
+<h2 class="menu-logo">이름미정</h2>
 
-<h2>UTAU 음원</h2>
-<p>UTAU 보이스 아카이브</p>
+<a href="#">이름미정이란?</a>
+<a href="#">가이드라인</a>
 
-<h2>신디사이저 V AI</h2>
-<p>Synthesizer V AI</p>
+<div class="divider"></div>
 
-<h2>음성 피크</h2>
-<p>VOICEPEAK</p>
+<a href="#">이메일</a>
+<a href="#">공식 트위터</a>
 
-<h2>공식 일러스트</h2>
-<p>Official illustration</p>
+<div class="divider"></div>
 
-</div>
-
-
-
-<div class="column">
-
-<h2>이름미정이란?</h2>
-<p>What is this character?</p>
-
-<h2>역사 · 연표</h2>
-<p>History</p>
-
-<h2>가이드라인</h2>
-<p>Guidelines</p>
-
-<h2>캐릭터 규약</h2>
-<p>Character Terms</p>
-
-<h2>음원 규약</h2>
-<p>Voice Library Terms</p>
-
-<h2>저작권 신청</h2>
-<p>Copyright application</p>
-
-<h2>문의</h2>
-<p>Contact</p>
+<a href="#">우타우 음원</a>
+<a href="#">일러스트 로고</a>
 
 </div>
 
 
 
-<div class="column">
+<!-- 내용 -->
 
-<h2>Official Twitter</h2>
+<main>
 
-<h2>YouTube 채널</h2>
+<h1>메인 화면</h1>
 
-<h2>pixiv FANBOX</h2>
+<p>여기에 페이지 내용이 들어감</p>
 
-<h2>BOOTH</h2>
-
-</div>
-
-
-</section>
-
-
-
-<!-- 하단 -->
-
-<footer>
-
-<p>© 2026 All rights reserved.</p>
-
-</footer>
-
-
-
-<!-- TOP 버튼 -->
-
-<button id="topBtn">TOP</button>
+</main>
 
 
 
 <script>
 
-const topBtn = document.getElementById("topBtn");
+function toggleMenu(){
 
-topBtn.onclick = function(){
+let menu = document.getElementById("sideMenu");
 
-window.scrollTo({
-top:0,
-behavior:"smooth"
-});
+if(menu.style.left === "0px"){
+
+menu.style.left = "-250px";
+
+}else{
+
+menu.style.left = "0px";
+
+}
 
 }
 
 </script>
-
 
 
 </body>
