@@ -1,165 +1,84 @@
 body{
-
 margin:0;
 font-family:sans-serif;
-
 }
-
-
 
 /* 상단 바 */
 
 .topbar{
-
 display:flex;
 align-items:center;
-
 background:#222;
 color:white;
-
 padding:15px;
-
 }
-
-
 
 .logo-small{
-
 font-weight:bold;
 font-size:18px;
-
 }
-
-
 
 /* 메뉴 */
 
 .menu{
-
 margin-left:auto;
-
 display:flex;
 gap:20px;
-
 }
-
-
 
 .menu a{
-
 color:white;
 text-decoration:none;
-
 }
 
-
-
-/* 메뉴 버튼 */
+/* 햄버거 버튼 */
 
 .menu-btn{
-
 display:none;
-
 margin-left:10px;
-
 font-size:22px;
-
 background:none;
 border:none;
-
 color:white;
-
 cursor:pointer;
-
 }
-
-
 
 /* 구분선 */
 
 .divider{
-
 width:1px;
 height:20px;
-
 background:#777;
-
 }
-
-
 
 /* 사이드 메뉴 */
 
 .side-menu{
-
 position:fixed;
-
 top:0;
 left:-260px;
-
 width:260px;
 height:100%;
-
 background:white;
-
 padding:20px;
-
 display:flex;
 flex-direction:column;
 gap:15px;
-
 box-shadow:2px 0 10px rgba(0,0,0,0.2);
-
 transition:0.3s;
-
 }
-
-
 
 .side-menu a{
-
 text-decoration:none;
 color:black;
-
 }
-
-
 
 /* 메인 */
 
-.hero{
-
-text-align:center;
-
+main{
 padding:120px 20px;
-
+text-align:center;
 }
-
-
-
-/* TOP 버튼 */
-
-#topBtn{
-
-position:fixed;
-
-bottom:30px;
-right:30px;
-
-padding:12px 18px;
-
-background:#222;
-color:white;
-
-border:none;
-
-border-radius:20px;
-
-cursor:pointer;
-
-}
-
-
 
 /* 반응형 */
 
