@@ -2,36 +2,24 @@
 <html lang="ko">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>이름미정</title>
-
 <link rel="stylesheet" href="style.css">
-
 </head>
-
 
 <body>
 
-
-<!-- 상단 바 -->
-
 <header class="topbar">
 
-<div class="logo-small">
-이름미정
-</div>
+<div class="logo-small">이름미정</div>
 
-<button class="menu-btn" onclick="toggleMenu()">
-☰
-</button>
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
 
 <nav class="menu">
 
-<a href="#">이름미정이란?</a>
-<a href="#">가이드라인</a>
+<a href="about.html">이름미정이란?</a>
+<a href="guideline.html">가이드라인</a>
 
 <div class="divider"></div>
 
@@ -40,23 +28,20 @@
 
 <div class="divider"></div>
 
-<a href="#">우타우 음원</a>
-<a href="#">일러스트 로고</a>
+<a href="utau.html">우타우 음원</a>
+<a href="illustration.html">일러스트 로고</a>
 
 </nav>
 
 </header>
 
 
-
-<!-- 사이드 메뉴 -->
-
 <div id="sideMenu" class="side-menu">
 
-<h2 class="menu-logo">이름미정</h2>
+<h2>이름미정</h2>
 
-<a href="#">이름미정이란?</a>
-<a href="#">가이드라인</a>
+<a href="about.html">이름미정이란?</a>
+<a href="guideline.html">가이드라인</a>
 
 <div class="divider"></div>
 
@@ -65,62 +50,35 @@
 
 <div class="divider"></div>
 
-<a href="#">우타우 음원</a>
-<a href="#">일러스트 로고</a>
+<a href="utau.html">우타우 음원</a>
+<a href="illustration.html">일러스트 로고</a>
 
 </div>
 
 
-
-<!-- 메인 -->
-
 <main>
 
-<section class="hero">
-
-<h1>UTAU 음원 사이트</h1>
+<h1>메인 페이지</h1>
 <p>여기에 메인 소개가 들어갑니다</p>
 
-</section>
-
 </main>
-
-
-
-<!-- TOP 버튼 -->
-
-<button id="topBtn">TOP</button>
-
 
 
 <script>
 
 function toggleMenu(){
 
-let menu = document.getElementById("sideMenu");
+let menu=document.getElementById("sideMenu");
 
-if(menu.style.left === "0px"){
-menu.style.left = "-260px";
+if(menu.style.left==="0px"){
+menu.style.left="-260px";
 }else{
-menu.style.left = "0px";
+menu.style.left="0px";
 }
-
-}
-
-const topBtn = document.getElementById("topBtn");
-
-topBtn.onclick = function(){
-
-window.scrollTo({
-top:0,
-behavior:"smooth"
-});
 
 }
 
 </script>
-
-
 
 </body>
 </html>
