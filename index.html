@@ -1,185 +1,128 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ko">
 
 <head>
+
 <meta charset="UTF-8">
-<title>이름미정 UTAU</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>UTAU 음원 사이트</title>
+
 <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
-<header>
 
-<nav class="menu">
+<!-- 로고 -->
 
-<a href="#voicebank">UTAU 음원</a>
-<a href="#illust">일러스트 로고</a>
-<a href="#about">이름미정이란?</a>
-<a href="#guideline">가이드라인</a>
-<a href="#email">이메일</a>
-<a href="#twitter">공식 트위터(X)</a>
+<header class="logo-area">
 
-</nav>
+<img src="images/logo.png" alt="character logo">
 
 </header>
 
 
-<!-- 1 UTAU 음원 -->
 
-<section id="voicebank" class="hero">
+<!-- 메뉴 인덱스 -->
 
-<div class="left">
+<section class="menu">
 
-<img src="images/logo.png" class="logo">
+<div class="column">
 
-<h1>이름미정</h1>
+<h2>UTAU 음원</h2>
+<p>UTAU 보이스 아카이브</p>
 
-<a class="download" href="downloads/voicebank.zip">
-UTAU 음원 다운로드
-</a>
+<h2>신디사이저 V AI</h2>
+<p>Synthesizer V AI</p>
 
-</div>
-
-<div class="right">
-
-<img src="images/character.png" class="character">
-
-</div>
-
-</section>
-
-
-
-<!-- 2 일러스트 로고 -->
-
-<section id="illust">
+<h2>음성 피크</h2>
+<p>VOICEPEAK</p>
 
 <h2>공식 일러스트</h2>
-
-<div class="flex">
-
-<div class="left">
-
-<a class="download" href="downloads/illust.png">PNG 다운로드</a>
-<br>
-<a class="download" href="downloads/illust.jpg">JPG 다운로드</a>
-
-</div>
-
-<div class="right">
-
-<img src="images/official_illust.png">
-
-</div>
+<p>Official illustration</p>
 
 </div>
 
 
-<h2>공식 로고</h2>
 
-<div class="flex">
-
-<div class="left">
-
-<a class="download" href="downloads/logo.png">로고 다운로드</a>
-
-</div>
-
-<div class="right">
-
-<img src="images/logo.png">
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- 3 이름미정이란 -->
-
-<section id="about">
+<div class="column">
 
 <h2>이름미정이란?</h2>
+<p>What is this character?</p>
 
-<p>
-여기에 캐릭터 설명을 작성하세요.
-</p>
-
-
-<div class="flex">
-
-<div class="left">
-
-<h3>캐릭터 프로필</h3>
-
-<ul>
-
-<li>이름 : 이름미정</li>
-<li>나이 : ?</li>
-<li>키 : ?</li>
-<li>성별 : ?</li>
-<li>음원 타입 : CV</li>
-
-</ul>
-
-</div>
-
-<div class="right">
-
-<img src="images/character.png">
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- 4 가이드라인 -->
-
-<section id="guideline">
+<h2>역사 · 연표</h2>
+<p>History</p>
 
 <h2>가이드라인</h2>
+<p>Guidelines</p>
 
-<p></p>
+<h2>캐릭터 규약</h2>
+<p>Character Terms</p>
+
+<h2>음원 규약</h2>
+<p>Voice Library Terms</p>
+
+<h2>저작권 신청</h2>
+<p>Copyright application</p>
+
+<h2>문의</h2>
+<p>Contact</p>
+
+</div>
+
+
+
+<div class="column">
+
+<h2>Official Twitter</h2>
+
+<h2>YouTube 채널</h2>
+
+<h2>pixiv FANBOX</h2>
+
+<h2>BOOTH</h2>
+
+</div>
+
 
 </section>
 
 
 
-<!-- 5 이메일 -->
-
-<section id="email">
-
-<h2>Email</h2>
-
-<p>example@email.com</p>
-
-</section>
-
-
-
-<!-- 6 트위터 -->
-
-<section id="twitter">
-
-<h2>Official X</h2>
-
-<a href="https://twitter.com/">트위터 바로가기</a>
-
-</section>
-
-
+<!-- 하단 -->
 
 <footer>
 
-<p>© 2026 이름미정 Project</p>
+<p>© 2026 All rights reserved.</p>
 
 </footer>
+
+
+
+<!-- TOP 버튼 -->
+
+<button id="topBtn">TOP</button>
+
+
+
+<script>
+
+const topBtn = document.getElementById("topBtn");
+
+topBtn.onclick = function(){
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+}
+
+</script>
+
 
 
 </body>
