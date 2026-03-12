@@ -1,0 +1,177 @@
+body{
+margin:0;
+font-family:sans-serif;
+background:#fff;
+}
+
+/* 상단 메뉴 */
+
+.topbar{
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+padding:15px 40px;
+
+background:#000;
+color:white;
+}
+
+.logo img{
+height:40px;
+cursor:pointer;
+}
+
+.menu{
+display:flex;
+gap:25px;
+align-items:center;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+font-size:14px;
+}
+
+/* 트위터 */
+
+.twitter img{
+height:20px;
+}
+
+/* 홈 */
+
+.home{
+
+height:100vh;
+
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+
+background-image:url("images/background.png");
+background-size:cover;
+background-position:center;
+}
+
+.home img{
+width:300px;
+animation:fadeDown 1.2s ease;
+}
+
+.home button{
+
+margin-top:30px;
+
+padding:15px 35px;
+
+border:none;
+
+background:#000;
+color:white;
+
+font-size:16px;
+
+cursor:pointer;
+}
+
+@keyframes fadeDown{
+
+0%{
+opacity:0;
+transform:translateY(-50px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* UTAU 페이지 */
+
+.utau-layout{
+
+display:flex;
+
+height:calc(100vh - 80px);
+}
+
+.utau-left{
+
+flex:1;
+
+padding:60px;
+
+overflow-y:auto;
+}
+
+.utau-right{
+
+width:450px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+background:#f4f4f4;
+}
+
+.utau-right img{
+max-width:90%;
+}
+
+/* 다운로드 버튼 */
+
+.download-btn{
+
+display:inline-block;
+
+background:#000000;
+
+color:white;
+
+padding:15px 30px;
+
+text-decoration:none;
+
+margin-top:20px;
+
+border-radius:6px;
+
+font-weight:bold;
+}
+
+.download-btn:hover{
+background:#333;
+}
+
+/* 유튜브 */
+
+.youtube{
+
+margin-top:40px;
+}
+
+/* 하단 바 */
+
+.footer-bar{
+
+background:black;
+
+color:white;
+
+padding:20px;
+
+display:flex;
+
+justify-content:space-between;
+align-items:center;
+}
+
+.footer-bar img{
+height:35px;
+}
