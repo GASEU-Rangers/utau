@@ -1,95 +1,82 @@
-body{
-margin:0;
-font-family:sans-serif;
-}
+<!DOCTYPE html>
+<html lang="ko">
 
-/* 상단바 */
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>이름미정</title>
 
-.topbar{
-display:flex;
-align-items:center;
-background:#000;
-color:white;
-padding:15px;
-}
+<link rel="stylesheet" href="style.css">
 
-.logo{
-font-weight:bold;
-}
+</head>
 
-/* PC 메뉴 */
+<body>
 
-.desktop-menu{
-margin-left:auto;
-display:flex;
-gap:20px;
-}
+<header class="topbar">
 
-.desktop-menu a{
-color:white;
-text-decoration:none;
-}
+<div class="logo">이름미정</div>
 
-/* 햄버거 버튼 */
+<button class="hamburger" onclick="toggleMenu()">☰</button>
 
-.hamburger{
-display:none;
-margin-left:auto;
-font-size:22px;
-background:none;
-border:none;
-color:white;
-cursor:pointer;
-}
+<nav class="desktop-menu">
 
-/* 모바일 메뉴 */
+<a href="#">이름미정이란?</a>
+<a href="#">가이드라인</a>
+<a href="#">이메일</a>
+<a href="#">공식 트위터</a>
+<a href="#">우타우 음원</a>
+<a href="#">일러스트 로고</a>
 
-.mobile-menu{
-display:none;
-position:fixed;
-top:0;
-left:0;
-width:250px;
-height:100%;
-background:white;
-padding:20px;
-box-shadow:2px 0 10px rgba(0,0,0,0.2);
-}
+</nav>
 
-.mobile-menu a{
-display:block;
-margin:10px 0;
-text-decoration:none;
-color:black;
-}
+</header>
 
-/* 다운로드 버튼 */
 
-.download-btn{
-display:inline-block;
-background:black;
-color:white;
-padding:12px 24px;
-text-decoration:none;
-border-radius:6px;
-font-weight:bold;
-margin-top:20px;
-}
+<div id="mobileMenu" class="mobile-menu">
 
-.download-btn:hover{
-background:#333;
-}
+<h2>이름미정</h2>
 
-/* 반응형 */
+<a href="#">이름미정이란?</a>
+<a href="#">가이드라인</a>
 
-@media (max-width:900px){
+<hr>
 
-.desktop-menu{
-display:none;
-}
+<a href="#">이메일</a>
+<a href="#">공식 트위터</a>
 
-.hamburger{
-display:block;
+<hr>
+
+<a href="#">우타우 음원</a>
+<a href="#">일러스트 로고</a>
+
+</div>
+
+
+<main>
+
+<h1>UTAU 음원 다운로드</h1>
+
+<a href="#" class="download-btn">다운로드</a>
+
+</main>
+
+
+<script>
+
+function toggleMenu(){
+
+let menu = document.getElementById("mobileMenu");
+
+if(menu.style.display === "block"){
+menu.style.display = "none";
+}else{
+menu.style.display = "block";
 }
 
 }
+
+</script>
+
+
+</body>
+</html>
