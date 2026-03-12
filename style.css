@@ -1,177 +1,95 @@
 body{
 margin:0;
 font-family:sans-serif;
-background:#fff;
 }
 
-/* 상단 메뉴 */
+/* 상단바 */
 
 .topbar{
 display:flex;
 align-items:center;
-justify-content:space-between;
-
-padding:15px 40px;
-
 background:#000;
 color:white;
+padding:15px;
 }
 
-.logo img{
-height:40px;
-cursor:pointer;
+.logo{
+font-weight:bold;
 }
 
-.menu{
+/* PC 메뉴 */
+
+.desktop-menu{
+margin-left:auto;
 display:flex;
-gap:25px;
-align-items:center;
+gap:20px;
 }
 
-.menu a{
+.desktop-menu a{
 color:white;
 text-decoration:none;
-font-size:14px;
 }
 
-/* 트위터 */
+/* 햄버거 버튼 */
 
-.twitter img{
-height:20px;
-}
-
-/* 홈 */
-
-.home{
-
-height:100vh;
-
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
-
-background-image:url("images/background.png");
-background-size:cover;
-background-position:center;
-}
-
-.home img{
-width:300px;
-animation:fadeDown 1.2s ease;
-}
-
-.home button{
-
-margin-top:30px;
-
-padding:15px 35px;
-
+.hamburger{
+display:none;
+margin-left:auto;
+font-size:22px;
+background:none;
 border:none;
-
-background:#000;
 color:white;
-
-font-size:16px;
-
 cursor:pointer;
 }
 
-@keyframes fadeDown{
+/* 모바일 메뉴 */
 
-0%{
-opacity:0;
-transform:translateY(-50px);
+.mobile-menu{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:250px;
+height:100%;
+background:white;
+padding:20px;
+box-shadow:2px 0 10px rgba(0,0,0,0.2);
 }
 
-100%{
-opacity:1;
-transform:translateY(0);
-}
-
-}
-
-/* UTAU 페이지 */
-
-.utau-layout{
-
-display:flex;
-
-height:calc(100vh - 80px);
-}
-
-.utau-left{
-
-flex:1;
-
-padding:60px;
-
-overflow-y:auto;
-}
-
-.utau-right{
-
-width:450px;
-
-display:flex;
-align-items:center;
-justify-content:center;
-
-background:#f4f4f4;
-}
-
-.utau-right img{
-max-width:90%;
+.mobile-menu a{
+display:block;
+margin:10px 0;
+text-decoration:none;
+color:black;
 }
 
 /* 다운로드 버튼 */
 
 .download-btn{
-
 display:inline-block;
-
-background:#000000;
-
+background:black;
 color:white;
-
-padding:15px 30px;
-
+padding:12px 24px;
 text-decoration:none;
-
-margin-top:20px;
-
 border-radius:6px;
-
 font-weight:bold;
+margin-top:20px;
 }
 
 .download-btn:hover{
 background:#333;
 }
 
-/* 유튜브 */
+/* 반응형 */
 
-.youtube{
+@media (max-width:900px){
 
-margin-top:40px;
+.desktop-menu{
+display:none;
 }
 
-/* 하단 바 */
-
-.footer-bar{
-
-background:black;
-
-color:white;
-
-padding:20px;
-
-display:flex;
-
-justify-content:space-between;
-align-items:center;
+.hamburger{
+display:block;
 }
 
-.footer-bar img{
-height:35px;
 }
