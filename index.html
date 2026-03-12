@@ -1,68 +1,95 @@
-<!DOCTYPE html>
-<html lang="ko">
+body{
+margin:0;
+font-family:sans-serif;
+}
 
-<head>
+/* 상단바 */
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+.topbar{
+display:flex;
+align-items:center;
+background:#000;
+color:white;
+padding:15px;
+}
 
-<title>이름미정</title>
+.logo{
+font-weight:bold;
+}
 
-<link rel="stylesheet" href="style.css">
+/* PC 메뉴 */
 
-</head>
+.desktop-menu{
+margin-left:auto;
+display:flex;
+gap:20px;
+}
 
-<body>
+.desktop-menu a{
+color:white;
+text-decoration:none;
+}
 
+/* 햄버거 버튼 */
 
-<header class="topbar">
+.hamburger{
+display:none;
+margin-left:auto;
+font-size:22px;
+background:none;
+border:none;
+color:white;
+cursor:pointer;
+}
 
-<div class="logo">
-<img src="images/logo.png" onclick="goHome()">
-</div>
+/* 모바일 메뉴 */
 
-<nav class="menu">
+.mobile-menu{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:250px;
+height:100%;
+background:white;
+padding:20px;
+box-shadow:2px 0 10px rgba(0,0,0,0.2);
+}
 
-<a href="about.html">이름미정이란?</a>
+.mobile-menu a{
+display:block;
+margin:10px 0;
+text-decoration:none;
+color:black;
+}
 
-<a href="guideline.html">가이드라인</a>
+/* 다운로드 버튼 */
 
-<a href="utau.html">우타우 음원</a>
+.download-btn{
+display:inline-block;
+background:black;
+color:white;
+padding:12px 24px;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+margin-top:20px;
+}
 
-<a href="illustration.html">일러스트 로고</a>
+.download-btn:hover{
+background:#333;
+}
 
-<a class="twitter" href="https://twitter.com" target="_blank">
-<img src="images/twitter.png">
-</a>
+/* 반응형 */
 
-</nav>
+@media (max-width:900px){
 
-</header>
+.desktop-menu{
+display:none;
+}
 
+.hamburger{
+display:block;
+}
 
-
-<section class="home">
-
-<img src="images/character.png">
-
-<button onclick="location.href='about.html'">
-이름미정이란?
-</button>
-
-</section>
-
-
-
-<div class="footer-bar">
-
-<img src="images/logo.png">
-
-<p>contact@email.com</p>
-
-</div>
-
-
-<script src="script.js"></script>
-
-</body>
-</html>
+}
