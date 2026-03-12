@@ -2,75 +2,67 @@
 <html lang="ko">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>이름미정</title>
+
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
+
 <header class="topbar">
 
-<div class="logo">이름미정</div>
+<div class="logo">
+<img src="images/logo.png" onclick="goHome()">
+</div>
 
-<button class="hamburger" onclick="toggleMenu()">☰</button>
+<nav class="menu">
 
-<nav class="desktop-menu">
 <a href="about.html">이름미정이란?</a>
+
 <a href="guideline.html">가이드라인</a>
-<a href="#">이메일</a>
-<a href="#">공식 트위터</a>
+
 <a href="utau.html">우타우 음원</a>
+
 <a href="illustration.html">일러스트 로고</a>
+
+<a class="twitter" href="https://twitter.com" target="_blank">
+<img src="images/twitter.png">
+</a>
+
 </nav>
 
 </header>
 
 
-<div id="mobileMenu" class="mobile-menu">
 
-<h2>이름미정</h2>
+<section class="home">
 
-<a href="about.html">이름미정이란?</a>
-<a href="guideline.html">가이드라인</a>
+<img src="images/character.png">
 
-<hr>
+<button onclick="location.href='about.html'">
+이름미정이란?
+</button>
 
-<a href="#">이메일</a>
-<a href="#">공식 트위터</a>
+</section>
 
-<hr>
 
-<a href="utau.html">우타우 음원</a>
-<a href="illustration.html">일러스트 로고</a>
+
+<div class="footer-bar">
+
+<img src="images/logo.png">
+
+<p>contact@email.com</p>
 
 </div>
 
 
-<main>
-
-<h1>메인 페이지</h1>
-<p>여기에 메인 내용</p>
-
-</main>
-
-
-<script>
-
-function toggleMenu(){
-
-let menu = document.getElementById("mobileMenu");
-
-if(menu.style.display === "block"){
-menu.style.display = "none";
-}else{
-menu.style.display = "block";
-}
-
-}
-
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
