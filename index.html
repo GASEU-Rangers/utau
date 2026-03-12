@@ -1,186 +1,68 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ko">
 
 <head>
+
 <meta charset="UTF-8">
-<title>이름미정 UTAU</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>이름미정</title>
+
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-<header>
+
+<header class="topbar">
+
+<div class="logo">
+<img src="images/logo.png" onclick="goHome()">
+</div>
 
 <nav class="menu">
 
-<a href="#voicebank">UTAU 음원</a>
-<a href="#illust">일러스트 로고</a>
-<a href="#about">이름미정이란?</a>
-<a href="#guideline">가이드라인</a>
-<a href="#email">이메일</a>
-<a href="#twitter">공식 트위터(X)</a>
+<a href="about.html">이름미정이란?</a>
+
+<a href="guideline.html">가이드라인</a>
+
+<a href="utau.html">우타우 음원</a>
+
+<a href="illustration.html">일러스트 로고</a>
+
+<a class="twitter" href="https://twitter.com" target="_blank">
+<img src="images/twitter.png">
+</a>
 
 </nav>
 
 </header>
 
 
-<!-- 1 UTAU 음원 -->
 
-<section id="voicebank" class="hero">
-
-<div class="left">
-
-<img src="images/logo.png" class="logo">
-
-<h1>이름미정</h1>
-
-<a class="download" href="downloads/voicebank.zip">
-UTAU 음원 다운로드
-</a>
-
-</div>
-
-<div class="right">
-
-<img src="images/character.png" class="character">
-
-</div>
-
-</section>
-
-
-
-<!-- 2 일러스트 로고 -->
-
-<section id="illust">
-
-<h2>공식 일러스트</h2>
-
-<div class="flex">
-
-<div class="left">
-
-<a class="download" href="downloads/illust.png">PNG 다운로드</a>
-<br>
-<a class="download" href="downloads/illust.jpg">JPG 다운로드</a>
-
-</div>
-
-<div class="right">
-
-<img src="images/official_illust.png">
-
-</div>
-
-</div>
-
-
-<h2>공식 로고</h2>
-
-<div class="flex">
-
-<div class="left">
-
-<a class="download" href="downloads/logo.png">로고 다운로드</a>
-
-</div>
-
-<div class="right">
-
-<img src="images/logo.png">
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- 3 이름미정이란 -->
-
-<section id="about">
-
-<h2>이름미정이란?</h2>
-
-<p>
-여기에 캐릭터 설명을 작성하세요.
-</p>
-
-
-<div class="flex">
-
-<div class="left">
-
-<h3>캐릭터 프로필</h3>
-
-<ul>
-
-<li>이름 : 이름미정</li>
-<li>나이 : ?</li>
-<li>키 : ?</li>
-<li>성별 : ?</li>
-<li>음원 타입 : CV</li>
-
-</ul>
-
-</div>
-
-<div class="right">
+<section class="home">
 
 <img src="images/character.png">
 
+<button onclick="location.href='about.html'">
+이름미정이란?
+</button>
+
+</section>
+
+
+
+<div class="footer-bar">
+
+<img src="images/logo.png">
+
+<p>contact@email.com</p>
+
 </div>
 
-</div>
 
-</section>
-
-
-
-<!-- 4 가이드라인 -->
-
-<section id="guideline">
-
-<h2>가이드라인</h2>
-
-<p></p>
-
-</section>
-
-
-
-<!-- 5 이메일 -->
-
-<section id="email">
-
-<h2>Email</h2>
-
-<p>example@email.com</p>
-
-</section>
-
-
-
-<!-- 6 트위터 -->
-
-<section id="twitter">
-
-<h2>Official X</h2>
-
-<a href="https://twitter.com/">트위터 바로가기</a>
-
-</section>
-
-
-
-<footer>
-
-<p>© 2026 이름미정 Project</p>
-
-</footer>
-
+<script src="script.js"></script>
 
 </body>
 </html>
